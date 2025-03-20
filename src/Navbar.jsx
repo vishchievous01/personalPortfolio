@@ -14,7 +14,7 @@ function Navbar() {
     if (menuOpen) {
       document.addEventListener("mousedown", handleClickOutside);
     }
-    
+
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
@@ -23,20 +23,34 @@ function Navbar() {
   return (
     <nav className="navbar bg-body-tertiary fixed-top px-3">
       <div className="container-fluid d-flex justify-content-between align-items-center py-2">
-        
         {/* Name Centered */}
         <div className="flex-grow-1 text-center">
           <a className="navbar-brand m-0" href="#">
-            <h6 className="fw-light mb-0" style={{ fontSize: "22px" }}>Vishnu Narayanan</h6>
+            <h6 className="fw-light mb-0" style={{ fontSize: "22px" }}>
+              Vishnu Narayanan
+            </h6>
           </a>
         </div>
 
         {/* Navigation Items - Right to Left Slide */}
-        <div ref={menuRef} className={`menu-items d-flex align-items-center ${menuOpen ? "show" : ""}`}>
-          <a className="nav-link mx-2" href="#">Home</a>
-          <a className="nav-link mx-2" href="#">Works</a>
-          <a className="nav-link mx-2" href="#">Experience</a>
-          <a className="nav-link mx-2" href="#">Downloads</a>
+        <div
+          ref={menuRef}
+          className={`menu-items d-flex align-items-center ${
+            menuOpen ? "show" : ""
+          }`}
+        >
+          <a className="nav-link mx-2" href="#">
+            Home
+          </a>
+          <a className="nav-link mx-2" href="#">
+            Works
+          </a>
+          <a className="nav-link mx-2" href="#">
+            Experience
+          </a>
+          <a className="nav-link mx-2" href="#">
+            Downloads
+          </a>
         </div>
 
         {/* Toggle Button - Smaller Icon & "X" When Open */}

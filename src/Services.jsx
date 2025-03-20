@@ -23,7 +23,14 @@ const ServiceCard = ({ title, description, image }) => {
         }}
       >
         {/* Image, Title, and Button - Proper Flex Layout */}
-        <div style={{ display: "flex", alignItems: "center", width: "100%", position: "relative" }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            width: "100%",
+            position: "relative",
+          }}
+        >
           <img
             src={image}
             alt={title}
@@ -35,7 +42,10 @@ const ServiceCard = ({ title, description, image }) => {
               marginRight: "10px",
             }}
           />
-          <h6 className="fw-semibold mb-0" style={{ fontSize: "15px", color: "#333", margin: 0, flexGrow: 1 }}>
+          <h6
+            className="fw-semibold mb-0"
+            style={{ fontSize: "15px", color: "#333", margin: 0, flexGrow: 1 }}
+          >
             {title}
           </h6>
 
@@ -66,7 +76,10 @@ const ServiceCard = ({ title, description, image }) => {
           transition={{ duration: 0.3, ease: "easeInOut" }}
           style={{ overflow: "hidden", marginTop: isOpen ? "6px" : "0" }}
         >
-          <p className="text-gray-700 mb-0" style={{ fontSize: "14px", color: "#555", marginTop: "8px" }}>
+          <p
+            className="text-gray-700 mb-0"
+            style={{ fontSize: "14px", color: "#555", marginTop: "8px" }}
+          >
             {description}
           </p>
         </motion.div>
@@ -75,24 +88,36 @@ const ServiceCard = ({ title, description, image }) => {
   );
 };
 
-
-
 const ServicesList = () => {
   return (
-    <div className="py-5 container-fluid text-center" id="services" style={{ backgroundColor: "#1a1a1a", minHeight: "100vh" }}>
-      <h1 className="text-white fw-light mb-4 py-1" style={{ fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" }}>
+    <div
+      className="py-5 container-fluid text-center"
+      id="services"
+      style={{ backgroundColor: "#1a1a1a", minHeight: "100vh" }}
+    >
+      <h1
+        className="text-white fw-light mb-4 py-1"
+        style={{
+          fontFamily:
+            "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+        }}
+      >
         Services
       </h1>
       <div className="container">
         <div className="row justify-content-center">
           {services.map((service, index) => (
-            <ServiceCard key={index} title={service.title} description={service.description} image={service.image} />
+            <ServiceCard
+              key={index}
+              title={service.title}
+              description={service.description}
+              image={service.image}
+            />
           ))}
         </div>
       </div>
     </div>
   );
 };
-
 
 export default ServicesList;

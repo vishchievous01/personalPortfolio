@@ -9,23 +9,23 @@ import Services from "./Services";
 export const services = [
   {
     title: "Full-Stack Web Development",
-    description: " Building web applications with Django and React.",
+    description: " Building Web Applications With Django And React.",
     image: "src/assets/images/icons/coding.png",
   },
   {
     title: "API Development",
-    description: "Creating REST APIs using Django REST Framework.",
+    description: "Creating REST APIs Using Django REST Framework.",
     image: "src/assets/images/icons/cloud-api.png",
   },
   {
     title: "Frontend Development",
-    description: "Designing & Building modern UIs.",
+    description: "Designing & Building Modern UIs.",
     image: "src/assets/images/icons/front-end-programming.png",
   },
   {
     title: "Backend Development",
     description:
-      "Handling databases, authentication, and server logic with Django.",
+      "Handling Databases, Authentication, And Server Logic with Django.",
     image: "src/assets/images/icons/backend-coding.png",
   },
   {
@@ -35,27 +35,27 @@ export const services = [
   },
   {
     title: "Deployment & Hosting",
-    description: "Deploying apps on cloud",
+    description: "Deploying Apps On Cloud",
     image: "src/assets/images/icons/deployment.png",
   },
   {
     title: "UI/UX Improvements",
-    description: "Enhancing web design and user experience.",
+    description: "Enhancing Web Design And User Experience.",
     image: "src/assets/images/icons/user-interface.png",
   },
   {
     title: "Third-Party Integrations",
-    description: "Payment gateways, authentication",
+    description: "Payment Gateways, Authentication",
     image: "src/assets/images/icons/management.png",
   },
   {
     title: "Bug Fixing & Optimization",
-    description: "Debugging and improving performance.",
+    description: "Debugging And Improving Performance.",
     image: "src/assets/images/icons/bug.png",
   },
   {
     title: "Freelance",
-    description: "Helping businesses with their web solutions.",
+    description: "Helping Businesses With Their Web Solutions.",
     image: "src/assets/images/icons/freelancer.png",
   },
 ];
