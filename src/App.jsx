@@ -67,7 +67,7 @@ function App() {
     { name: "JavaScript", percentage: "70%" },
     { name: "Python", percentage: "90%" },
     { name: "Django", percentage: "9s0%" },
-    { name: "React", percentage: "80%" },
+    { name: "React JS", percentage: "80%" },
     { name: "Bootstrap", percentage: "80%" },
     { name: "Git", percentage: "90%" },
     { name: "GitHub", percentage: "80%" },
