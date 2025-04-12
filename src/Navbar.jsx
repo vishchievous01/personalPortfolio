@@ -25,7 +25,7 @@ function Navbar() {
       <div className="container-fluid d-flex justify-content-between align-items-center py-2">
         {/* Name Centered */}
         <div className="flex-grow-1 text-center">
-          <a className="navbar-brand m-0" href="#">
+          <a className="navbar-brand m-0" href="index.html">
             <h6 className="fw-light mb-0" style={{ fontSize: "22px" }}>
               Vishnu Narayanan
             </h6>
@@ -39,13 +39,13 @@ function Navbar() {
             menuOpen ? "show" : ""
           }`}
         >
-          <a className="nav-link mx-2" href="#">
+          <a className="nav-link mx-2" href="index.html">
             Home
           </a>
           <a className="nav-link mx-2" href="#">
             Works
           </a>
-          <a className="nav-link mx-2" href="#">
+          <a className="nav-link mx-2" href="#">  
             Experience
           </a>
           <a className="nav-link mx-2" href="#">
