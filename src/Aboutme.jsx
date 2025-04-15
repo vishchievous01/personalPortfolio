@@ -61,7 +61,7 @@ function AboutMe({ skillSet }) {
 
         {/* Skills Section with Smooth Transition */}
         <div
-          className="skills-container mt-4"
+          className="skills-container mt-5"
           style={{
             maxHeight: showSkills ? "600px" : "0px",
             opacity: showSkills ? "1" : "0",

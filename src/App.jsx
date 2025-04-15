@@ -5,6 +5,8 @@ import Navbar from "./Navbar";
 import Aboutme from "./Aboutme";
 import Social from "./Social";
 import Services from "./Services";
+import Footer from "./Footer";
+import TimelinePreview from "./TimelinePreview";
 
 export const services = [
   {
@@ -82,8 +84,10 @@ function App() {
       <Navbar></Navbar>
       <Home></Home>
       <Aboutme skillSet={skillSet}></Aboutme>
+      <TimelinePreview />
       <Services skillSet={skillSet}></Services>
       <Social></Social>
+      <Footer />
     </div>
   );
 }
