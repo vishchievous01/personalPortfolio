@@ -3,25 +3,23 @@ import "./TimelinePreview.css";
 
 const projects = [
   {
-    title: "Portfolio Website",
-    date: "March 2025",
+    title: "Bigmart E-Commerce",
+    date: "May 2024",
     description:
-      "A personal portfolio built using React and custom CSS to showcase my skills, projects, and contact details.",
-    tech: ["React", "CSS", "Framer Motion"],
+      "Online store named BigMart was developed to provide a stunning shopping experience for internet users and has a wide range of features that are meant both for customers and admins.",
+    tech: ["HTML", "CSS", "JavScript", "Python", "Django"],
   },
   {
-    title: "Task Manager API",
-    date: "Feb 2025",
+    title: "CarWorld - Online Car Dealership Store",
+    date: "June 2024",
     description:
-      "A RESTful API with Django for managing daily tasks, including authentication and CRUD operations.",
-    tech: ["Django", "DRF", "JWT Auth"],
+      "CarWorld is an open marketplace for automobile which facilitates transaction by directly linking buyers and sellers. It also provides features that makes listing a vehicle as easy as possible for the users. ",
   },
   {
-    title: "Blog Platform",
-    date: "Jan 2025",
+    title: "QuikSocial - Social Networking Site",
+    date: "July 2024",
     description:
-      "A full-stack blog platform where users can read and write posts. Features include markdown support and comment system.",
-    tech: ["React", "Django", "SQLite"],
+      "QuikSocial is a simple social site that allows people to post statuses, comments, and even friend other people.",
   },
 ];
 
@@ -36,12 +34,13 @@ const TimelinePreview = () => {
         backgroundColor: "#1a1a1a",
         paddingTop: "70px",
         margin: 0,
+        marginTop: "-90px",
         overflow: "hidden",
         position: "relative",
       }}
     >
       <h1
-        className="text-white fw-light mb-4 py-1"
+        className="text-white fw-light mb-4 py-2"
         style={{
           fontFamily:
             "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
@@ -52,17 +51,21 @@ const TimelinePreview = () => {
       <div className="timeline-line">
         {projects.map((project, index) => (
           <div key={index} className="timeline-item">
-            <div className="timeline-dot" />
+            {/* <div className="timeline-dot" /> */}
             <div className="timeline-content">
-              <h3>{project.title}</h3>
+              <div className=" d-flex justify-content-center ">
+              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
+                <h3>{project.title}</h3>
+              </a>
               <p className="timeline-date">{project.date}</p>
+              </div>
               <p>{project.description}</p>
               <div className="timeline-tags">
-                {project.tech.map((tag, idx) => (
+                {/* {project.tech.map((tag, idx) => (
                   <span key={idx} className="timeline-tag">
                     {tag}
                   </span>
-                ))}
+                ))} */}
               </div>
             </div>
           </div>

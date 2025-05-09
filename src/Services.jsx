@@ -7,7 +7,7 @@ const ServiceCard = ({ title, description, image }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="col-md-4 col-sm-6 col-12 mb-3">
+    <div className="col-md-4 col-sm-6 col-12 mb-3" style={{ padding: "10px" }}>
       <div
         className="card shadow-sm border-0 p-4 position-relative"
         style={{
@@ -93,7 +93,7 @@ const ServicesList = () => {
     <div
       className="py-5 container-fluid text-center"
       id="services"
-      style={{ backgroundColor: "#1a1a1a", minHeight: "100vh" }}
+      style={{ backgroundColor: "#1a1a1a", minHeight: "100vh", marginTop: "-62px" }}
     >
       <h1
         className="text-white fw-light mb-4 py-1"

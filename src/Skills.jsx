@@ -9,7 +9,7 @@ function Skills({ skillSet }) {
     >
       <h1 className="text-white fw-light mb-4">Skills</h1>
       <div className="container">
-        <div className="row justify-content-center">
+        <div className="row justify-content-center" style={{ padding: "10px" }}>
           {skillSet.map((s, index) => (
             <div key={index} className="col-md-4 col-sm-6 col-12 mb-4">
               <div
